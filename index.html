@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stadtname - Schulprojekt Klasse 9</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header mit Navigation -->
+  <header class="main-header">
+    <div class="header-inner">
+      <a class="logo" href="#">Stadt-Logo</a>
+      <div class="search-container">
+        <input type="text" placeholder="Suche in der Stadt" aria-label="Suche" />
+      </div>
+      <button id="sidebarToggle" class="btn">Menü</button>
+    </div>
+  </header>
+
+  <!-- Sidebar, kommt von rechts -->
+  <aside id="sidebar" class="sidebar">
+    <button id="sidebarClose" class="btn close-btn">X</button>
+    <nav class="sidebar-nav">
+      <a href="verwaltung.html">Stadt / Verwaltung</a>
+      <a href="politik.html">Politik</a>
+      <a href="daten.html">Daten über die Stadt</a>
+      <a href="bauen.html">Bauen und Wohnen</a>
+      <a href="tourismus.html">Tourismus</a>
+      <a href="mobilitaet.html">Mobilität</a>
+      <a href="dienstleistungen.html">Dienstleistungen A-Z</a>
+      <a href="veranstaltungen.html">Veranstaltungen</a>
+      <a href="kultur.html">Stadtleben & Kultur</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </aside>
+
+  <!-- Overlay hinter Sidebar -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Hero-Bereich -->
+  <section class="hero" id="startseite">
+    <div class="hero-content">
+      <h1>Willkommen in Mustercity</h1>
+      <p>Schule trifft Stadtleben – entdecke Infos, Events und Angebote.</p>
+      <a href="#events" class="btn">Mehr erfahren</a>
+    </div>
+  </section>
+
+  <!-- Veranstaltungen -->
+  <section id="events" class="section">
+    <h2>Veranstaltungen</h2>
+    <div class="cards">
+      <a href="unterseite.html" class="card">
+        <img src="https://via.placeholder.com/300x180?text=Event+1" alt="Event 1" />
+        <h3>Sommerfest im Park</h3>
+        <p>Musik, Spiele und gutes Essen für die ganze Familie.</p>
+      </a>
+      <a href="unterseite.html" class="card">
+        <img src="https://via.placeholder.com/300x180?text=Event+2" alt="Event 2" />
+        <h3>Kulturwoche</h3>
+        <p>Kunst und Theater in der Innenstadt.</p>
+      </a>
+      <a href="unterseite.html" class="card">
+        <img src="https://via.placeholder.com/300x180?text=Event+3" alt="Event 3" />
+        <h3>Sportfest</h3>
+        <p>Schulmeisterschaft und Mitmach-Angebote.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- News mit automatischem Wechsel -->
+  <section id="news" class="section">
+    <h2>Aktuelle News</h2>
+    <div class="news-box" id="newsBox"></div>
+  </section>
+
+  <!-- Info-Kästen -->
+  <section class="section info-section">
+    <h2>Wichtige Infos</h2>
+    <div class="info-cards">
+      <article class="info-card">
+        <h3>Pressemeldungen</h3>
+        <p>Aktuelle Mitteilungen aus Stadtverwaltung und Bildung.</p>
+      </article>
+      <article class="info-card">
+        <h3>Dienstleistungen A-Z</h3>
+        <p>Übersicht aller Services von A bis Z.</p>
+      </article>
+      <article class="info-card">
+        <h3>Wichtige Daten</h3>
+        <p>Termine, Öffnungszeiten und Ansprechpartner.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer mit Kontaktformular -->
+  <footer class="footer">
+    <h2>Kontakt</h2>
+    <form class="contact-form" action="#" onsubmit="return false;">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="E-Mail" required />
+      <textarea placeholder="Nachricht" rows="4" required></textarea>
+      <button type="submit" class="btn">Absenden</button>
+    </form>
+    <p><a href="kontakt.html">Kontaktseite</a> | <a href="#">Impressum</a></p>
+    <p>© 2026 Stadt Musterstadt</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

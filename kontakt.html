@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Mustercity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Stadt-Logo</a>
+      <button id="sidebarToggle" class="btn">Menü</button>
+    </div>
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <button id="sidebarClose" class="btn close-btn">X</button>
+    <nav class="sidebar-nav">
+      <a href="verwaltung.html">Stadt / Verwaltung</a>
+      <a href="politik.html">Politik</a>
+      <a href="daten.html">Daten über die Stadt</a>
+      <a href="bauen.html">Bauen und Wohnen</a>
+      <a href="tourismus.html">Tourismus</a>
+      <a href="mobilitaet.html">Mobilität</a>
+      <a href="dienstleistungen.html">Dienstleistungen A-Z</a>
+      <a href="veranstaltungen.html">Veranstaltungen</a>
+      <a href="kultur.html">Stadtleben & Kultur</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+
+  <main class="section">
+    <h1>Kontakt</h1>
+    <p>Schreibe uns eine Nachricht, wenn du Fragen zur Stadt oder einem Projekt hast.</p>
+
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Kontaktformular</h3>
+        <form class="contact-form" action="#" onsubmit="return false;">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="E-Mail" required>
+          <textarea placeholder="Nachricht" rows="5" required></textarea>
+          <button type="submit" class="btn">Absenden</button>
+        </form>
+      </article>
+      <article class="info-card">
+        <h3>Kontaktdaten</h3>
+        <p><strong>Adresse:</strong> Rathausplatz 1, 12345 Musterstadt</p>
+        <p><strong>Telefon:</strong> 01234 567890</p>
+        <p><strong>E-Mail:</strong> info@musterstadt.de</p>
+      </article>
+    </div>
+
+    <a href="index.html" class="btn">Zurück zur Startseite</a>
+  </main>
+
+  <footer class="footer">
+    <a href="kontakt.html">Kontakt</a> | <a href="#">Impressum</a>
+    <p>© 2026 Stadt Musterstadt</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
