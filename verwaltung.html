@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verwaltung - Mustercity</title>
+  <title>Verwaltung - Bayville</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="page-verwaltung">
   <header class="main-header">
     <div class="header-inner">
-      <a class="logo" href="index.html">Stadt-Logo</a>
+      <a href="index.html"><img src="Assets/LOgo.png" alt="logoStadt Bayville Logo" class="logo" style="height: 70px; width: 70px;"></a>
+      <div class="search-container">
+        <input type="text" placeholder="Suche nach Informationen über Bayville" aria-label="Suche" />
+      </div>
       <button id="sidebarToggle" class="btn">Menü</button>
     </div>
   </header>
@@ -17,6 +20,10 @@
   <aside id="sidebar" class="sidebar">
     <button id="sidebarClose" class="btn close-btn">X</button>
     <nav class="sidebar-nav">
+      <a href="index.html">Startseite</a>
+      <a href="models.html">Stadtteile</a>
+      <a href="about.html">Über uns</a>
+      <a href="contact.html">Kontakt</a>
       <a href="verwaltung.html">Stadt / Verwaltung</a>
       <a href="politik.html">Politik</a>
       <a href="daten.html">Daten über die Stadt</a>
@@ -27,7 +34,7 @@
       <a href="veranstaltungen.html">Veranstaltungen</a>
       <a href="kultur.html">Stadtleben & Kultur</a>
       <a href="karriere.html">Karriere</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="kontakt.html">Kontakt (DE)</a>
     </nav>
   </aside>
 
@@ -99,9 +106,67 @@
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
-  <footer class="footer">
-    <a href="kontakt.html">Kontakt</a> | <a href="#">Impressum</a>
-    <p>© 2026 Stadt Musterstadt</p>
+  <!-- Features -->
+  <section id="features" class="section">
+    <h2>Was Bayville bietet</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Hohe Lebensqualität</h3>
+        <p>Bayville bietet eine saubere Umwelt, gute Infrastruktur und eine starke Gemeinschaft. Mit modernen Einrichtungen und grünen Räumen. Unsere Stadt ist bekannt für ihre sauberen Straßen, effizienten öffentlichen Verkehr und eine Vielzahl von Parks und Freizeiteinrichtungen. Die Einwohner genießen eine hohe Lebensqualität dank der Investitionen in Bildung, Gesundheit und Umwelt.</p>
+        <ul>
+          <li>Umfassende Gesundheitsversorgung mit modernen Kliniken</li>
+          <li>Moderne Bildungseinrichtungen mit qualifizierten Lehrern</li>
+          <li>Vielfältige Freizeitmöglichkeiten wie Sportzentren und Kulturevents</li>
+          <li>Nachhaltige Stadtplanung mit Fahrradwegen und öffentlichem Transport</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Exzellenter Service</h3>
+        <p>Unser Team steht Ihnen bei allen Anliegen zur Seite. Wir bieten maßgeschneiderte Lösungen für Einwohner und Besucher. Von der Beantragung von Dokumenten bis hin zu Beratungen – unser Kundenservice ist rund um die Uhr erreichbar. Wir legen Wert auf persönliche Betreuung und schnelle Lösungen.</p>
+        <ul>
+          <li>Persönliche Beratung in unserem Bürgerbüro</li>
+          <li>Öffentliche Dienstleistungen online und vor Ort</li>
+          <li>Kostenlose Informationszentren in der ganzen Stadt</li>
+          <li>24/7 Notfall-Hotline für dringende Anliegen</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Innovation und Nachhaltigkeit</h3>
+        <p>Wir setzen auf umweltfreundliche Technologien und erneuerbare Energien. Sparen Sie Ressourcen und schonen Sie die Umwelt. Bayville ist Vorreiter in der Nutzung von Solarenergie und Elektromobilität. Unsere Initiativen zur Reduzierung des CO2-Ausstoßes machen unsere Stadt zu einem Modell für nachhaltige Entwicklung.</p>
+        <ul>
+          <li>Erneuerbare Energieprojekte wie Solarparks</li>
+          <li>Niedriger CO2-Ausstoß durch strenge Umweltstandards</li>
+          <li>Umweltzertifizierungen für Unternehmen und Gebäude</li>
+          <li>Bildungsprogramme zur Umweltbewusstsein</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+    <footer class="footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>Kontakt</h3>
+        <p>Stadt Musterstadt</p>
+        <p>Rathausplatz 1, 12345 Musterstadt</p>
+        <p>Telefon: +49 123 456789</p>
+        <p>E-Mail: <a href="mailto:info@musterstadt.de">info@musterstadt.de</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Quicklinks</h3>
+        <a href="index.html">Startseite</a><br />
+        <a href="about.html">Über uns</a><br />
+        <a href="kontakt.html">Kontakt</a><br />
+        <a href="veranstaltungen.html">Veranstaltungen</a>
+      </div>
+      <div class="footer-column">
+        <h3>Rechtliches</h3>
+        <a href="#">Impressum</a><br />
+        <a href="#">Datenschutz</a><br />
+        <a href="#">Nutzungsbedingungen</a>
+      </div>
+    </div>
+    <p class="legal">© 2026 Stadt Musterstadt | <a href="kontakt.html">Kontakt</a> | <a href="#">Impressum</a></p>
   </footer>
 
   <script src="script.js"></script>

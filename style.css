@@ -44,12 +44,11 @@ a {
   padding: 0.5rem 1rem;
 }
 .logo {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #fff;
+  max-width: 150px;
+  height: auto;
 }
 .logo:hover {
-  color: #d9e7d2;
+  opacity: 0.8;
 }
 .search-container input {
   padding: 0.5rem;
@@ -109,7 +108,7 @@ a {
   height: 80vh;
   min-height: 380px;
   color: #fff;
-  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('Assets/Background.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -166,6 +165,62 @@ a {
 .card h3 {
   margin: 0.8rem 1rem 0.4rem;
 }
+
+/* Neue card-Varianten */
+.content-card,
+.info-card,
+.card {
+  border: 1px solid #d9d2c2;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(32, 38, 44, 0.08);
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.content-card:hover,
+.info-card:hover,
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(32, 38, 44, 0.16);
+  border-color: #b3c6b1;
+}
+
+.content-card--highlight {
+  border-left: 4px solid #2d6a42;
+  background: #f4f9f2;
+}
+
+.content-card--reverse {
+  border-left: 4px solid #a6ada1;
+  background: #fefdf8;
+}
+
+/* Verbesserte responsive Grid-Strukturen */
+.card-grid,
+.info-section .info-cards,
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .card-grid,
+  .info-section .info-cards,
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid,
+  .info-section .info-cards,
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .card p {
   margin: 0 1rem 1rem;
   color: #505f6d;
@@ -204,10 +259,53 @@ a {
   box-shadow: 0 4px 12px rgba(46, 61, 73, 0.15);
   background-color: #f8f5ee;
 }
+.info-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.info-card ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
 .footer {
   background-color: #e9edf2;
   padding: 2rem 1rem;
   text-align: center;
+}
+.footer-columns {
+  max-width: 1100px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+.footer-column h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #1f4f2e;
+}
+.footer-column p,
+.footer-column a {
+  margin: 0.25rem 0;
+  color: #2d3a2d;
+}
+.footer-column a:hover {
+  text-decoration: underline;
+}
+.footer p.legal,
+.footer p.legal a {
+  margin-top: 1rem;
+  display: block;
+  color: #5a654d;
 }
 .contact-form {
   display: flex;
@@ -215,6 +313,16 @@ a {
   gap: 0.8rem;
   max-width: 500px;
   margin: 0 auto 1rem auto;
+}
+@media (max-width: 880px) {
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-column {
+    min-width: 100%;
+  }
 }
 .contact-form input,
 .contact-form textarea {
@@ -230,6 +338,70 @@ a {
   .hero {
     height: 55vh;
   }
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tab-btn {
+  background-color: #e9e9e9;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.tab-btn.active {
+  background-color: #2d6a42;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.model-card {
+  cursor: pointer;
 }
 
 /* Galerie Styles */

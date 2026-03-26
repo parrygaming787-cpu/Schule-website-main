@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stadtname - Schulprojekt Klasse 9</title>
+  <meta name="description" content="Offizielle Website der Stadt Bayville – Entdecken Sie unsere lebendige Stadt mit Informationen zu Verwaltung, Tourismus, Kultur und mehr." />
+  <meta name="keywords" content="Bayville, Stadt, Verwaltung, Tourismus, Kultur, Events" />
+  <title>Stadt Bayville - Offizielle Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header mit Navigation -->
   <header class="main-header">
     <div class="header-inner">
-      <a class="logo" href="#">Stadt-Logo</a>
+      <a href="index.html"><img src="Assets/LOgo.png" alt="logoStadt Bayville Logo" class="logo" style="height: 70px; width: 70px;"></a>
       <div class="search-container">
-        <input type="text" placeholder="Suche in der Stadt" aria-label="Suche" />
+        <input type="text" placeholder="Suche nach Informationen über Bayville" aria-label="Suche" />
       </div>
       <button id="sidebarToggle" class="btn">Menü</button>
     </div>
@@ -22,6 +24,10 @@
   <aside id="sidebar" class="sidebar">
     <button id="sidebarClose" class="btn close-btn">X</button>
     <nav class="sidebar-nav">
+      <a href="index.html">Startseite</a>
+      <a href="models.html">Stadtteile</a>
+      <a href="about.html">Über uns</a>
+      <a href="contact.html">Kontakt</a>
       <a href="verwaltung.html">Stadt / Verwaltung</a>
       <a href="politik.html">Politik</a>
       <a href="daten.html">Daten über die Stadt</a>
@@ -32,7 +38,7 @@
       <a href="veranstaltungen.html">Veranstaltungen</a>
       <a href="kultur.html">Stadtleben & Kultur</a>
       <a href="karriere.html">Karriere</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="kontakt.html">Kontakt (DE)</a>
     </nav>
   </aside>
 
@@ -42,30 +48,98 @@
   <!-- Hero-Bereich -->
   <section class="hero" id="startseite">
     <div class="hero-content">
-      <h1>Willkommen in Mustercity</h1>
-      <p>Schule trifft Stadtleben – entdecke Infos, Events und Angebote.</p>
-      <a href="#events" class="btn">Mehr erfahren</a>
+      <h1>Willkommen in Bayville</h1>
     </div>
   </section>
 
-  <!-- Veranstaltungen -->
-  <section id="events" class="section">
-    <h2>Veranstaltungen</h2>
+  <!-- Features -->
+  <section id="features" class="section">
+    <h2>Was Bayville bietet</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Hohe Lebensqualität</h3>
+        <p>Bayville bietet eine saubere Umwelt, gute Infrastruktur und eine starke Gemeinschaft. Mit modernen Einrichtungen und grünen Räumen. Unsere Stadt ist bekannt für ihre sauberen Straßen, effizienten öffentlichen Verkehr und eine Vielzahl von Parks und Freizeiteinrichtungen. Die Einwohner genießen eine hohe Lebensqualität dank der Investitionen in Bildung, Gesundheit und Umwelt.</p>
+        <ul>
+          <li>Umfassende Gesundheitsversorgung mit modernen Kliniken</li>
+          <li>Moderne Bildungseinrichtungen mit qualifizierten Lehrern</li>
+          <li>Vielfältige Freizeitmöglichkeiten wie Sportzentren und Kulturevents</li>
+          <li>Nachhaltige Stadtplanung mit Fahrradwegen und öffentlichem Transport</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Exzellenter Service</h3>
+        <p>Unser Team steht Ihnen bei allen Anliegen zur Seite. Wir bieten maßgeschneiderte Lösungen für Einwohner und Besucher. Von der Beantragung von Dokumenten bis hin zu Beratungen – unser Kundenservice ist rund um die Uhr erreichbar. Wir legen Wert auf persönliche Betreuung und schnelle Lösungen.</p>
+        <ul>
+          <li>Persönliche Beratung in unserem Bürgerbüro</li>
+          <li>Öffentliche Dienstleistungen online und vor Ort</li>
+          <li>Kostenlose Informationszentren in der ganzen Stadt</li>
+          <li>24/7 Notfall-Hotline für dringende Anliegen</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Innovation und Nachhaltigkeit</h3>
+        <p>Wir setzen auf umweltfreundliche Technologien und erneuerbare Energien. Sparen Sie Ressourcen und schonen Sie die Umwelt. Bayville ist Vorreiter in der Nutzung von Solarenergie und Elektromobilität. Unsere Initiativen zur Reduzierung des CO2-Ausstoßes machen unsere Stadt zu einem Modell für nachhaltige Entwicklung.</p>
+        <ul>
+          <li>Erneuerbare Energieprojekte wie Solarparks</li>
+          <li>Niedriger CO2-Ausstoß durch strenge Umweltstandards</li>
+          <li>Umweltzertifizierungen für Unternehmen und Gebäude</li>
+          <li>Bildungsprogramme zur Umweltbewusstsein</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Über Bayville -->
+  <section id="ueber-bayville" class="section">
+    <h2>Über Bayville</h2>
+    <div class="card-grid">
+      <article class="content-card content-card--highlight">
+        <h3>Unsere Stadt in Kürze</h3>
+        <p>Bayville ist eine dynamische Stadt mit einer reichen Geschichte und einer vielversprechenden Zukunft. Gelegen in einer malerischen Region, bietet unsere Stadt eine perfekte Balance zwischen urbanem Leben und natürlicher Schönheit. Mit einer Bevölkerung von über 100.000 Einwohnern ist Bayville ein Zentrum für Kultur, Wirtschaft und Innovation.</p>
+      </article>
+      <article class="content-card content-card--reverse">
+        <h3>Werte und Entwicklung</h3>
+        <p>Unsere Stadt wurde im 18. Jahrhundert gegründet und hat sich seitdem zu einem modernen Gemeinwesen entwickelt. Wir legen großen Wert auf Nachhaltigkeit, Bildung und Gemeinschaft. Von unseren historischen Gebäuden im Zentrum bis zu den grünen Parks am Stadtrand – Bayville hat für jeden etwas zu bieten.</p>
+      </article>
+      <article class="content-card">
+        <h3>Willkommen in Bayville</h3>
+        <p>Besuchen Sie uns und erleben Sie die Herzlichkeit unserer Bewohner, die Vielfalt unserer Kultur und die Qualität unseres Lebensstandards. Bayville – wo Tradition auf Zukunft trifft.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Stadtteile Übersicht -->
+  <section id="stadtteile" class="section">
+    <h2>Unsere Stadtteile</h2>
+    <div id="zentrum" class="tab-content active">
+      <div class="card-grid">
+        <article class="info-card model-card" data-model="modell1">
+          <h3>Stadtzentrum Nord</h3>
+          <p>Historisches Zentrum mit Einkaufsmöglichkeiten und Cafés. Preis ab 500.000 €. Dieses Viertel bietet eine Mischung aus historischer Architektur und modernen Annehmlichkeiten. Genießen Sie Spaziergänge durch gepflasterte Straßen, besuchen Sie lokale Märkte und entspannen Sie in gemütlichen Cafés. Perfekt für Singles und junge Familien.</p>
+        </article>
+        <article class="info-card model-card" data-model="modell2">
+          <h3>Stadtzentrum Süd</h3>
+          <p>Modernes Design mit vielen Grünflächen. Preis ab 600.000 €. Hier finden Sie zeitgenössische Gebäude umgeben von Parks und Gärten. Das Viertel ist ideal für Naturliebhaber und bietet Zugang zu Sporteinrichtungen, Restaurants und kulturellen Veranstaltungen. Eine harmonische Balance zwischen Stadtleben und Natur.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aktuelle VEranstaltungen -->
+  <section id="angebote" class="section">
+    <h2>Aktuelle Angebote</h2>
     <div class="cards">
       <a href="unterseite.html" class="card">
-        <img src="https://via.placeholder.com/300x180?text=Event+1" alt="Event 1" />
-        <h3>Sommerfest im Park</h3>
-        <p>Musik, Spiele und gutes Essen für die ganze Familie.</p>
+        <h3>Sommer-Festival</h3>
+        <p>20% Rabatt auf alle Veranstaltungen. Limitiertes Angebot! Genießen Sie Musik, Essen und Unterhaltung bei unserem jährlichen Sommer-Festival. Familienfreundliche Aktivitäten, lokale Künstler und Rabatte auf Eintrittskarten machen dieses Event unvergesslich.</p>
       </a>
       <a href="unterseite.html" class="card">
-        <img src="https://via.placeholder.com/300x180?text=Event+2" alt="Event 2" />
-        <h3>Kulturwoche</h3>
-        <p>Kunst und Theater in der Innenstadt.</p>
+        <h3>Familien-Rabatt</h3>
+        <p>Exklusive Angebote für Familienwohnungen mit Förderung. Profitieren Sie von staatlichen Zuschüssen und speziellen Rabatten für Familien. Unsere Programme unterstützen den Wohnungskauf oder die Miete mit zusätzlichen Vorteilen wie Kinderbetreuung und Bildungsförderung.</p>
       </a>
       <a href="unterseite.html" class="card">
-        <img src="https://via.placeholder.com/300x180?text=Event+3" alt="Event 3" />
-        <h3>Sportfest</h3>
-        <p>Schulmeisterschaft und Mitmach-Angebote.</p>
+        <h3>Beratung gratis</h3>
+        <p>Kostenlose Beratung im ersten Jahr inklusive. Lassen Sie sich von unseren Experten beraten – von Immobilien über Finanzen bis hin zu rechtlichen Fragen. Unser Team steht Ihnen zur Seite, um Ihren Umzug nach Bayville so reibungslos wie möglich zu gestalten.</p>
       </a>
     </div>
   </section>
@@ -76,38 +150,33 @@
     <div class="news-box" id="newsBox"></div>
   </section>
 
-  <!-- Info-Kästen -->
-  <section class="section info-section">
-    <h2>Wichtige Infos</h2>
-    <div class="info-cards">
-      <article class="info-card">
-        <h3>Pressemeldungen</h3>
-        <p>Aktuelle Mitteilungen aus Stadtverwaltung und Bildung.</p>
-      </article>
-      <article class="info-card">
-        <h3>Dienstleistungen A-Z</h3>
-        <p>Übersicht aller Services von A bis Z.</p>
-      </article>
-      <article class="info-card">
-        <h3>Wichtige Daten</h3>
-        <p>Termine, Öffnungszeiten und Ansprechpartner.</p>
-      </article>
-    </div>
-  </section>
-
   <!-- Footer mit Kontaktformular -->
   <footer class="footer">
-    <h2>Kontakt</h2>
-    <form class="contact-form" action="#" onsubmit="return false;">
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="E-Mail" required />
-      <textarea placeholder="Nachricht" rows="4" required></textarea>
-      <button type="submit" class="btn">Absenden</button>
-    </form>
-    <p><a href="kontakt.html">Kontaktseite</a> | <a href="#">Impressum</a></p>
-    <p>© 2026 Stadt Musterstadt</p>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>Kontakt</h3>
+        <p>Stadt Bayville</p>
+        <p>Rathausplatz 1, 12345 Bayville</p>
+        <p>Telefon: +49 123 456789</p>
+        <p>E-Mail: <a href="mailto:info@bayville.de">info@bayville.de</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Quicklinks</h3>
+        <a href="index.html">Startseite</a><br />
+        <a href="about.html">Über uns</a><br />
+        <a href="kontakt.html">Kontakt</a><br />
+        <a href="veranstaltungen.html">Veranstaltungen</a>
+      </div>
+      <div class="footer-column">
+        <h3>Rechtliches</h3>
+        <a href="#">Impressum</a><br />
+        <a href="#">Datenschutz</a><br />
+        <a href="#">Nutzungsbedingungen</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+  
 </body>
 </html>
