@@ -6,7 +6,7 @@
   <title>Dienstleistungen A-Z - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-dienstleistungen">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,23 +35,67 @@
 
   <main class="section">
     <h1>Dienstleistungen A-Z</h1>
+    <p>Alle wichtigen Dienstleistungen der Stadt von A bis Z. Hier findest du Hilfe für Bürger, Unternehmen und Besucher.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Buergeramt+Gebäude" alt="Bürgeramt Gebäude" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Muellwagen" alt="Müllwagen" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Online+Portal" alt="Online Portal" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Krankenhaus" alt="Krankenhaus" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Beratung" alt="Beratung" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Markt+Service" alt="Markt Service" />
+      </div>
+    </div>
+
+    <h2>Öffentliche Dienstleistungen</h2>
     <div class="card-grid">
       <article class="info-card">
         <h3>Bürgeramt</h3>
-        <img src="https://via.placeholder.com/120?text=Bürgeramt" alt="Bürgeramt" />
-        <p>Hier gibt es Pässe, Anmeldungen und viele Informationen für Bürger.</p>
+        <img src="https://via.placeholder.com/200x150?text=Bürgeramt" alt="Bürgeramt" />
+        <p>Hier gibt es Pässe, Anmeldungen und viele Informationen für Bürger. Öffnungszeiten: Mo-Fr 8-16 Uhr.</p>
       </article>
       <article class="info-card">
         <h3>Müllabfuhr</h3>
-        <img src="https://via.placeholder.com/120?text=Müll" alt="Müllabfuhr" />
-        <p>Die Müllabfuhr kommt wöchentlich. Ein Kalender zeigt den nächsten Termin.</p>
+        <img src="https://via.placeholder.com/200x150?text=Müll" alt="Müllabfuhr" />
+        <p>Die Müllabfuhr kommt wöchentlich. Ein Kalender zeigt den nächsten Termin. Recycling wird gefördert.</p>
       </article>
       <article class="info-card">
         <h3>Online-Services</h3>
-        <img src="https://via.placeholder.com/120?text=Online" alt="Online Services" />
-        <p>Viele Anträge lassen sich jetzt schnell über das Internet erledigen.</p>
+        <img src="https://via.placeholder.com/200x150?text=Online" alt="Online Services" />
+        <p>Viele Anträge lassen sich jetzt schnell über das Internet erledigen. Registriere dich für den Bürger-Account.</p>
+      </article>
+      <article class="info-card">
+        <h3>Gesundheitswesen</h3>
+        <img src="https://via.placeholder.com/200x150?text=Gesundheit" alt="Gesundheit" />
+        <p>Krankenhäuser, Apotheken und Notdienste. Informationen zu Impfungen und Vorsorge.</p>
       </article>
     </div>
+
+    <h2>Geschichte der Dienstleistungen</h2>
+    <p>Die Stadt hat ihre Dienstleistungen kontinuierlich verbessert. Von manuellen Prozessen zu digitalen Lösungen – der Bürgerservice steht im Mittelpunkt.</p>
+
+    <h2>Unterstützung und Gastronomie</h2>
+    <p>Neben Dienstleistungen bieten wir Beratung für Unternehmen. Lokale Gastronomie unterstützt die Wirtschaft.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Nutze die Online-Terminbuchung für das Bürgeramt.</li>
+      <li>Informiere dich über Umweltprogramme.</li>
+      <li>Anekdote: Das älteste Amt der Stadt ist das Standesamt, das seit 150 Jahren besteht.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -61,5 +105,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

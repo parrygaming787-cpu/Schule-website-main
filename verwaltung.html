@@ -6,7 +6,7 @@
   <title>Verwaltung - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-verwaltung">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,8 +35,67 @@
 
   <main class="section">
     <h1>Stadtverwaltung</h1>
-    <img src="https://via.placeholder.com/800x300?text=Verwaltung" alt="Verwaltung" />
     <p>In der Stadtverwaltung finden Sie Informationen zu Bürgerdiensten, Öffnungszeiten und Ansprechpartnern. Hier werden die wichtigsten Service- und Verwaltungsangelegenheiten geregelt. Ein modernes Rathaus zählt ebenfalls zu unserem städtischen Angebot.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Rathaus+Fassade" alt="Rathaus Fassade" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Buerger+Schalter" alt="Bürger Schalter" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Ordnungsamt" alt="Ordnungsamt" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Finanzberatung" alt="Finanzberatung" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historisches+Archiv" alt="Historisches Archiv" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Team+Verwaltung" alt="Team Verwaltung" />
+      </div>
+    </div>
+
+    <h2>Verwaltungsangebote</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Rathaus</h3>
+        <img src="https://via.placeholder.com/200x150?text=Rathaus" alt="Rathaus" />
+        <p>Zentraler Ort für alle Bürgerangelegenheiten. Öffnungszeiten: Mo-Fr 8-18 Uhr.</p>
+      </article>
+      <article class="info-card">
+        <h3>Bürgerdienste</h3>
+        <img src="https://via.placeholder.com/200x150?text=Dienste" alt="Bürgerdienste" />
+        <p>Anmeldungen, Pässe und Genehmigungen. Online-Terminbuchung verfügbar.</p>
+      </article>
+      <article class="info-card">
+        <h3>Ordnungsamt</h3>
+        <img src="https://via.placeholder.com/200x150?text=Ordnung" alt="Ordnungsamt" />
+        <p>Für Sicherheit und Ordnung in der Stadt. Notruf: 110.</p>
+      </article>
+      <article class="info-card">
+        <h3>Finanzamt</h3>
+        <img src="https://via.placeholder.com/200x150?text=Finanzen" alt="Finanzamt" />
+        <p>Steuerberatung und -erklärungen. Digitale Services.</p>
+      </article>
+    </div>
+
+    <h2>Geschichte der Verwaltung</h2>
+    <p>Die Verwaltung hat sich von bürokratischen Strukturen zu bürgerfreundlichen Services entwickelt. Moderne Technologie erleichtert den Zugang.</p>
+
+    <h2>Verwaltung und Gemeinschaft</h2>
+    <p>Die Verwaltung unterstützt Kultur und Wirtschaft. Lokale Märkte und Events werden gefördert.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Nutze Online-Services für schnelle Bearbeitung.</li>
+      <li>Besuche das Bürgerbüro für persönliche Beratung.</li>
+      <li>Anekdote: Das Rathaus wurde 1800 gebaut und überstand zwei Kriege.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -46,5 +105,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

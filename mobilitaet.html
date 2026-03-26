@@ -6,7 +6,7 @@
   <title>Mobilität - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-mobilitaet">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,23 +35,67 @@
 
   <main class="section">
     <h1>Mobilität in unserer Stadt</h1>
+    <p>Entdecke nachhaltige Mobilitätsoptionen: Öffentlicher Verkehr, Fahrradwege und Fußgängerzonen. Wir fördern umweltfreundliche Fortbewegung.</p>
+
+    <h2>Mobilitätsoptionen</h2>
     <div class="card-grid">
       <article class="info-card">
         <h3>Öffentlicher Verkehr</h3>
-        <img src="https://via.placeholder.com/120?text=Bus" alt="ÖPNV" />
-        <p>Busse und Bahn fahren regelmäßig, damit alle Orte gut erreichbar sind.</p>
+        <img src="https://via.placeholder.com/200x150?text=Bus" alt="ÖPNV" />
+        <p>Busse und Bahn fahren regelmäßig, damit alle Orte gut erreichbar sind. Günstige Tickets und moderne Fahrzeuge.</p>
       </article>
       <article class="info-card">
         <h3>Fahrradwege</h3>
-        <img src="https://via.placeholder.com/120?text=Fahrrad" alt="Fahrradwege" />
-        <p>Die Fahrradwege werden ausgebaut und machen das Radfahren sicherer.</p>
+        <img src="https://via.placeholder.com/200x150?text=Fahrrad" alt="Fahrradwege" />
+        <p>Die Fahrradwege werden ausgebaut und machen das Radfahren sicherer. Leihräder an vielen Stationen.</p>
       </article>
       <article class="info-card">
         <h3>Fußgängerfreundlich</h3>
-        <img src="https://via.placeholder.com/120?text=Fußgänger" alt="Fußgänger" />
-        <p>Gehwege sind sauber und barrierefrei, damit alle gut laufen können.</p>
+        <img src="https://via.placeholder.com/200x150?text=Fußgänger" alt="Fußgänger" />
+        <p>Gehwege sind sauber und barrierefrei, damit alle gut laufen können. Viele Parks und Plätze zum Entspannen.</p>
+      </article>
+      <article class="info-card">
+        <h3>E-Mobilität</h3>
+        <img src="https://via.placeholder.com/200x150?text=E-Auto" alt="E-Mobilität" />
+        <p>Ladestationen für Elektroautos und E-Bikes. Förderung nachhaltiger Fahrzeuge.</p>
       </article>
     </div>
+
+    <h2>Geschichte der Mobilität</h2>
+    <p>Von Pferdekutschen zu Elektrobussen – die Stadt hat sich stets an moderne Anforderungen angepasst. Historische Straßenbahnen erinnern an vergangene Zeiten.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Bus+Haltestelle" alt="Bus Haltestelle" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Fahrradweg" alt="Fahrradweg" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Fußgaengerzone" alt="Fußgängerzone" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=E-Ladestation" alt="E-Ladestation" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historische+Tram" alt="Historische Tram" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Parkplatz" alt="Parkplatz" />
+      </div>
+    </div>
+
+    <h2>Umwelt und Gastronomie</h2>
+    <p>Nachhaltige Mobilität schützt die Umwelt. Lokale Cafés bieten Bio-Produkte und laden zum Verweilen ein.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Nutze die Fahrrad-App für Routenplanung.</li>
+      <li>Kaufe eine Monatskarte für den ÖPNV – es lohnt sich.</li>
+      <li>Anekdote: Die erste Straßenbahn fuhr 1890 und verband damals nur wenige Stadtteile.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -61,5 +105,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

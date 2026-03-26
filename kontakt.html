@@ -6,7 +6,7 @@
   <title>Kontakt - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-kontakt">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -37,6 +37,31 @@
     <h1>Kontakt</h1>
     <p>Schreibe uns eine Nachricht, wenn du Fragen zur Stadt oder einem Projekt hast.</p>
 
+    <h2>Weitere Kontaktoptionen</h2>
+    <p>Neben dem Formular kannst du uns per Telefon oder E-Mail erreichen. Für dringende Anliegen nutze den Notruf.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Rathaus+Eingang" alt="Rathaus Eingang" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Kontakt+Buero" alt="Kontakt Büro" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Telefon+Zentrale" alt="Telefon Zentrale" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=E-Mail+Service" alt="E-Mail Service" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Beratung" alt="Beratung" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historisches+Postamt" alt="Historisches Postamt" />
+      </div>
+    </div>
+
     <div class="card-grid">
       <article class="info-card">
         <h3>Kontaktformular</h3>
@@ -53,7 +78,21 @@
         <p><strong>Telefon:</strong> 01234 567890</p>
         <p><strong>E-Mail:</strong> info@musterstadt.de</p>
       </article>
+      <article class="info-card">
+        <h3>Öffnungszeiten</h3>
+        <p>Mo-Fr: 8-18 Uhr<br>Sa: 9-12 Uhr<br>So: Geschlossen</p>
+      </article>
     </div>
+
+    <h2>Geschichte des Kontakts</h2>
+    <p>Die Stadtverwaltung hat sich von persönlichen Besuchen zu digitalen Services entwickelt. Moderne Kommunikation macht es einfacher.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Verwende das Kontaktformular für allgemeine Anfragen.</li>
+      <li>Für spezifische Abteilungen suche die direkten Kontakte.</li>
+      <li>Anekdote: Das erste Telefon in der Stadt wurde 1900 installiert.</li>
+    </ul>
 
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
@@ -64,5 +103,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

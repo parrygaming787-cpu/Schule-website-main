@@ -6,7 +6,7 @@
   <title>Bauen und Wohnen - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-bauen">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,23 +35,67 @@
 
   <main class="section">
     <h1>Bauen und Wohnen</h1>
+    <p>Informationen zu Bauprojekten, Wohnmöglichkeiten und städtischer Entwicklung. Hier erfährst du alles über neue Gebäude und Wohnqualität.</p>
+
+    <h2>Geschichte des Bauens</h2>
+    <p>Die Stadt hat sich von mittelalterlichen Gebäuden zu modernen Stadtvierteln entwickelt. Historische Sanierungen bewahren das Erbe, während Neubauten die Zukunft gestalten.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Neubau" alt="Neubau" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Baustelle+aktiv" alt="Baustelle aktiv" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Wohnviertel" alt="Wohnviertel" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Gruendach" alt="Gründach" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historisches+Haus" alt="Historisches Haus" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Park+wohnen" alt="Park wohnen" />
+      </div>
+    </div>
+
+    <h2>Aktuelle Projekte</h2>
     <div class="card-grid">
       <article class="info-card">
         <h3>Neue Wohngebiete</h3>
-        <img src="https://via.placeholder.com/120?text=Wohnung" alt="Wohngebiete" />
-        <p>Es entstehen neue Häuser und Wohnungen für Familien, Singles und Senioren.</p>
+        <img src="https://via.placeholder.com/200x150?text=Wohnung" alt="Wohngebiete" />
+        <p>Es entstehen neue Häuser und Wohnungen für Familien, Singles und Senioren. Moderne Architektur und nachhaltige Materialien.</p>
       </article>
       <article class="info-card">
         <h3>Bauprojekte</h3>
-        <img src="https://via.placeholder.com/120?text=Baustelle" alt="Bauprojekte" />
-        <p>Mehrere Bauprojekte sind geplant, z.B. eine Schule und ein kleines Einkaufszentrum.</p>
+        <img src="https://via.placeholder.com/200x150?text=Baustelle" alt="Bauprojekte" />
+        <p>Mehrere Bauprojekte sind geplant, z.B. eine Schule und ein kleines Einkaufszentrum. Alles im Einklang mit der Umwelt.</p>
       </article>
       <article class="info-card">
         <h3>Wohnen</h3>
-        <img src="https://via.placeholder.com/120?text=Zuhause" alt="Wohnen" />
-        <p>Unsere Stadt verbessert Wohnqualität mit mehr Parks und besseren Wegen.</p>
+        <img src="https://via.placeholder.com/200x150?text=Zuhause" alt="Wohnen" />
+        <p>Unsere Stadt verbessert Wohnqualität mit mehr Parks und besseren Wegen. Barrierefreie Wohnungen für alle.</p>
+      </article>
+      <article class="info-card">
+        <h3>Grüne Architektur</h3>
+        <img src="https://via.placeholder.com/200x150?text=Gruen" alt="Grüne Architektur" />
+        <p>Nachhaltiges Bauen mit Solarpanele und Gründächern. Zukunftssichere Wohnungen.</p>
       </article>
     </div>
+
+    <h2>Leben in der Stadt</h2>
+    <p>Neben Wohnen bieten wir Gastronomie und Kultur. Lokale Märkte und Cafés machen das Wohnen attraktiv.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Informiere dich frühzeitig über neue Projekte.</li>
+      <li>Beteilige dich an Bürgerbeteiligungen für Bauprojekte.</li>
+      <li>Anekdote: Der älteste Bau der Stadt ist eine Brücke aus dem 13. Jahrhundert, die noch immer genutzt wird.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -61,5 +105,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

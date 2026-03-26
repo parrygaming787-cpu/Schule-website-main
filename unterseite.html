@@ -6,7 +6,7 @@
   <title>Unterseite Beispiel - Stadtseite</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-unterseite">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,9 +35,63 @@
 
   <main class="section">
     <h1>Unterseite: Mehr Infos</h1>
-    <img src="https://via.placeholder.com/800x300?text=Unterseite" alt="Unterseite Bild" />
     <p>Diese Seite zeigt ein einfaches Beispiel für eine Unterseite mit Überschrift, Bild und Text. Du kannst hier jede beliebige Information der Stadt einfügen.</p>
     <p>Ein Link zurück zur Startseite hilft Benutzer:innen, schnell wieder zur Hauptseite zu gelangen.</p>
+
+    <h2>Allgemeine Informationen</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Stadtgeschichte</h3>
+        <img src="https://via.placeholder.com/200x150?text=Geschichte" alt="Stadtgeschichte" />
+        <p>Erfahre mehr über die Entwicklung unserer Stadt von den Anfängen bis heute.</p>
+      </article>
+      <article class="info-card">
+        <h3>Lebensqualität</h3>
+        <img src="https://via.placeholder.com/200x150?text=Leben" alt="Lebensqualität" />
+        <p>Warum unsere Stadt ein großartiger Ort zum Leben ist.</p>
+      </article>
+      <article class="info-card">
+        <h3>Zukunftsvision</h3>
+        <img src="https://via.placeholder.com/200x150?text=Zukunft" alt="Zukunftsvision" />
+        <p>Pläne für nachhaltige Entwicklung und Innovation.</p>
+      </article>
+    </div>
+
+    <h2>Geschichte und Kultur</h2>
+    <p>Unsere Stadt verbindet Tradition mit Moderne. Historische Stätten und kulturelle Events machen sie lebendig.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Stadt+Uebersicht" alt="Stadt Übersicht" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historische+Stätte" alt="Historische Stätte" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Moderne+Architektur" alt="Moderne Architektur" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Kulturelles+Event" alt="Kulturelles Event" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Gastronomie" alt="Gastronomie" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Natur" alt="Natur" />
+      </div>
+    </div>
+
+    <h2>Gastronomie und Tipps</h2>
+    <p>Genieße lokale Spezialitäten. Tipps für Besucher und Einheimische.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Entdecke die Stadt zu Fuß oder mit dem Fahrrad.</li>
+      <li>Besuche lokale Märkte für frische Produkte.</li>
+      <li>Anekdote: Die Stadt hat einen verborgenen Schatz – einen alten Brunnen aus dem 14. Jahrhundert.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -46,5 +100,11 @@
     <p>© 2026 Stadt Musterstadt</p>
   </footer>
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

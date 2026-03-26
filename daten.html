@@ -6,7 +6,7 @@
   <title>Daten über die Stadt - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-daten">
   <!-- Header und Navigation -->
   <header class="main-header">
     <div class="header-inner">
@@ -38,23 +38,88 @@
 
   <main class="section">
     <h1>Daten über die Stadt</h1>
+    <p>Interessante Fakten und Zahlen zu unserer Stadt. Von Bevölkerung über Wirtschaft bis hin zu Umwelt – alles auf einen Blick.</p>
+
+    <h2>Geschichte und Entwicklung</h2>
+    <p>Gegründet als Handelsstadt, hat sich die Stadt zu einem modernen Zentrum entwickelt. Historische Ereignisse wie die Industrialisierung prägten die Entwicklung.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Stadtplan" alt="Stadtplan" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Bevoelkerung+Chart" alt="Bevölkerung Chart" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historisches+Tor" alt="Historisches Tor" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Wirtschaftsdaten" alt="Wirtschaftsdaten" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Natur+Fluss" alt="Natur Fluss" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Markt+Szene" alt="Markt Szene" />
+      </div>
+    </div>
+
+    <h2>Bevölkerung und Geografie</h2>
     <div class="card-grid">
       <article class="info-card">
         <h3>Einwohnerzahl</h3>
-        <img src="https://via.placeholder.com/120?text=Person" alt="Einwohner" />
-        <p>Unsere Stadt hat 48.000 Einwohner. Viele Menschen wohnen in unterschiedlichen Stadtteilen.</p>
+        <img src="https://via.placeholder.com/200x150?text=Person" alt="Einwohner" />
+        <p>Unsere Stadt hat 48.000 Einwohner. Viele Menschen wohnen in unterschiedlichen Stadtteilen. Die Bevölkerung wächst stetig.</p>
       </article>
       <article class="info-card">
         <h3>Fläche</h3>
-        <img src="https://via.placeholder.com/120?text=Karte" alt="Fläche" />
-        <p>Die Stadt hat eine Fläche von 95 km² und kombiniert Natur mit modernen Vierteln.</p>
+        <img src="https://via.placeholder.com/200x150?text=Karte" alt="Fläche" />
+        <p>Die Stadt hat eine Fläche von 95 km² und kombiniert Natur mit modernen Vierteln. Grüne Oasen machen 30% aus.</p>
       </article>
       <article class="info-card">
         <h3>Gründung</h3>
-        <img src="https://via.placeholder.com/120?text=Historie" alt="Gründung" />
-        <p>Die Stadt wurde im Jahr 1234 gegründet und hat viele historische Gebäude.</p>
+        <img src="https://via.placeholder.com/200x150?text=Historie" alt="Gründung" />
+        <p>Die Stadt wurde im Jahr 1234 gegründet und hat viele historische Gebäude. Das älteste stammt aus dem 13. Jahrhundert.</p>
+      </article>
+      <article class="info-card">
+        <h3>Wirtschaft</h3>
+        <img src="https://via.placeholder.com/200x150?text=Wirtschaft" alt="Wirtschaft" />
+        <p>Hauptwirtschaftszweige: Tourismus, Handwerk und Technologie. Arbeitslosenquote bei 4%.</p>
       </article>
     </div>
+
+    <h2>Kultur und Gastronomie</h2>
+    <p>Die Stadt bietet eine vielfältige Gastronomie mit lokalen Produkten. Märkte und Festivals spiegeln die kulturelle Identität wider.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Erkunde die Datenvisualisierungen auf unserer Website.</li>
+      <li>Besuche das Statistikamt für detaillierte Berichte.</li>
+      <li>Anekdote: Die Stadt hat einen geheimen Rekord: Die meisten Kirschbäume pro Einwohner in Europa.</li>
+    </ul>
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Stadtplan" alt="Stadtplan" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Bevoelkerung+Chart" alt="Bevölkerung Chart" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Historisches+Tor" alt="Historisches Tor" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Wirtschaftsdaten" alt="Wirtschaftsdaten" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Natur+Fluss" alt="Natur Fluss" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Markt+Szene" alt="Markt Szene" />
+      </div>
+    </div>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -64,5 +129,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

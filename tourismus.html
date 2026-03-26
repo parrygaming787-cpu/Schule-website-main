@@ -6,7 +6,7 @@
   <title>Tourismus - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-tourismus">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,8 +35,72 @@
 
   <main class="section">
     <h1>Tourismus</h1>
-    <img src="https://via.placeholder.com/800x300?text=Tourismus" alt="Tourismus" />
     <p>Entdecke Sehenswürdigkeiten, Stadtführungen und Ausflugsziele. Hier findest du nützliche Informationen für Besucher: Unterkünfte, Restaurants und touristische Highlights.</p>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Stadtansicht" alt="Stadtansicht" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Rathaus+nahe" alt="Rathaus nahe" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Park+im+Fruehling" alt="Park im Frühling" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Museum+Eingang" alt="Museum Eingang" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Marktplatz" alt="Marktplatz" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Flussufer" alt="Flussufer" />
+      </div>
+    </div>
+
+    <h2>Geschichte und Kultur</h2>
+    <p>Unsere Stadt hat eine reiche Geschichte, die bis ins Mittelalter zurückreicht. Von den alten Mauern bis zu den modernen Vierteln – hier findest du Spuren vergangener Zeiten. Kulturelle Events wie das jährliche Stadtfest ziehen Besucher aus aller Welt an.</p>
+
+    <h2>Gastronomie</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Lokale Spezialitäten</h3>
+        <p>Probiere unsere berühmten Bratwürste und das hausgemachte Bier. Die Gastronomie bietet eine Mischung aus traditionellen und internationalen Küchen.</p>
+      </article>
+      <article class="info-card">
+        <h3>Restaurants</h3>
+        <p>Von gemütlichen Cafés bis zu Sterne-Restaurants – für jeden Geschmack ist etwas dabei. Empfehlung: Das Restaurant am Marktplatz.</p>
+      </article>
+    </div>
+
+    <h2>Sehenswürdigkeiten</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Altes Rathaus</h3>
+        <img src="https://via.placeholder.com/200x150?text=Rathaus" alt="Altes Rathaus" />
+        <p>Ein historisches Gebäude aus dem 16. Jahrhundert, das die Stadtgeschichte widerspiegelt. Besuche die Ausstellungen zur lokalen Geschichte.</p>
+      </article>
+      <article class="info-card">
+        <h3>Stadtpark</h3>
+        <img src="https://via.placeholder.com/200x150?text=Park" alt="Stadtpark" />
+        <p>Ein grüner Oasen mitten in der Stadt mit Seen, Wiesen und Spielplätzen. Perfekt für Picknicks und Entspannung.</p>
+      </article>
+      <article class="info-card">
+        <h3>Museum der Moderne</h3>
+        <img src="https://via.placeholder.com/200x150?text=Museum" alt="Museum" />
+        <p>Moderne Kunst und interaktive Ausstellungen. Ein Muss für Kunstliebhaber.</p>
+      </article>
+    </div>
+
+    <h2>Tipps für Besucher</h2>
+    <ul>
+      <li>Nutze die öffentlichen Verkehrsmittel – sie sind günstig und zuverlässig.</li>
+      <li>Besuche den Wochenmarkt am Samstag für frische Produkte.</li>
+      <li>Im Sommer: Bootsfahrten auf dem Fluss sind ein Highlight.</li>
+      <li>Anekdote: Die Stadt wurde nach einer Legende von einem tapferen Ritter gegründet, der einen Drachen besiegte.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -46,5 +110,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

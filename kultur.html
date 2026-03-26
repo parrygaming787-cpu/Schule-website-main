@@ -6,7 +6,7 @@
   <title>Stadtleben & Kultur - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-kultur">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,23 +35,72 @@
 
   <main class="section">
     <h1>Stadtleben & Kultur</h1>
+    <p>Entdecke das vielfältige kulturelle Leben unserer Stadt. Von Museen über Events bis hin zu Freizeitaktivitäten – hier gibt es für jeden etwas.</p>
+
+    <h2>Kulturelle Highlights</h2>
     <div class="card-grid">
       <article class="info-card">
         <h3>Events</h3>
-        <img src="https://via.placeholder.com/120?text=Events" alt="Events" />
-        <p>Konzerte und Festivals machen die Stadt lebendig. Es gibt viele coole Aktionen für Jugendliche.</p>
+        <img src="https://via.placeholder.com/200x150?text=Events" alt="Events" />
+        <p>Konzerte und Festivals machen die Stadt lebendig. Es gibt viele coole Aktionen für Jugendliche und Familien.</p>
       </article>
       <article class="info-card">
         <h3>Museen</h3>
-        <img src="https://via.placeholder.com/120?text=Museum" alt="Museen" />
+        <img src="https://via.placeholder.com/200x150?text=Museum" alt="Museen" />
         <p>Die Museen zeigen Geschichte, Natur und Technik. Schulklassen besuchen regelmäßig Ausstellungen.</p>
       </article>
       <article class="info-card">
         <h3>Freizeit</h3>
-        <img src="https://via.placeholder.com/120?text=Freizeit" alt="Freizeit" />
+        <img src="https://via.placeholder.com/200x150?text=Freizeit" alt="Freizeit" />
         <p>Es gibt Sporthallen, Parks und Jugendzentren. Hier treffen sich Freunde nach der Schule.</p>
       </article>
+      <article class="info-card">
+        <h3>Theater</h3>
+        <img src="https://via.placeholder.com/200x150?text=Theater" alt="Theater" />
+        <p>Regelmäßige Aufführungen von Klassikern bis Moderne. Ein kulturelles Highlight für alle Altersgruppen.</p>
+      </article>
+      <article class="info-card">
+        <h3>Kunstgalerien</h3>
+        <img src="https://via.placeholder.com/200x150?text=Kunst" alt="Kunst" />
+        <p>Lokale Künstler stellen ihre Werke aus. Workshops und Vernissagen bieten Einblicke in die Kunstszene.</p>
+      </article>
     </div>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Konzert" alt="Konzert" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Museum+innen" alt="Museum innen" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Park+Event" alt="Park Event" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Theater+Buehne" alt="Theater Bühne" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Kunst+Ausstellung" alt="Kunst Ausstellung" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Markt" alt="Markt" />
+      </div>
+    </div>
+
+    <h2>Geschichte und Kultur</h2>
+    <p>Unsere Stadt ist bekannt für ihre kulturelle Vielfalt. Von traditionellen Festen bis zu modernen Kunstinstallationen – die Kultur prägt das tägliche Leben. Historische Gebäude erzählen Geschichten aus vergangenen Jahrhunderten.</p>
+
+    <h2>Gastronomie und Lokale Szene</h2>
+    <p>Die Gastronomie spiegelt die kulturelle Mischung wider: Von traditionellen Gerichten bis zu internationalen Fusion-Küchen. Lokale Märkte bieten frische Produkte und kulinarische Entdeckungen.</p>
+
+    <h2>Tipps und Anekdoten</h2>
+    <ul>
+      <li>Besuche das jährliche Kulturfestival im Sommer – ein Fest der Vielfalt.</li>
+      <li>Schließe dich einer Stadtführung an, um verborgene kulturelle Schätze zu entdecken.</li>
+      <li>Anekdote: Die Stadt hat einen geheimen unterirdischen Gang aus dem Mittelalter, der bei Führungen erkundet werden kann.</li>
+    </ul>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -61,5 +110,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>Veranstaltungen - Mustercity</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="page-veranstaltungen">
   <header class="main-header">
     <div class="header-inner">
       <a class="logo" href="index.html">Stadt-Logo</a>
@@ -35,12 +35,72 @@
 
   <main class="section">
     <h1>Veranstaltungen</h1>
-    <img src="https://via.placeholder.com/800x300?text=Veranstaltungen" alt="Veranstaltungen" />
     <p>Alle kommenden Veranstaltungen der Stadt findet ihr hier. Feste, Konzerte, Märkte und Sportveranstaltungen – immer aktuell und informativ dargestellt.</p>
+
+    <h2>Geschichte der Veranstaltungen</h2>
+    <p>Unsere Stadt ist bekannt für ihre lebendigen Events. Von mittelalterlichen Märkten inspirierten Festen bis zu modernen Sportevents – die Tradition lebt fort.</p>
+
+    <h2>Aktuelle Events</h2>
+    <div class="card-grid">
+      <article class="info-card">
+        <h3>Sommerfest im Park</h3>
+        <img src="https://via.placeholder.com/200x150?text=Sommerfest" alt="Sommerfest" />
+        <p>15. August: Live-Musik, Essen und Spiele für die ganze Familie. Ein Highlight des Jahres!</p>
+      </article>
+      <article class="info-card">
+        <h3>Stadtmarathon</h3>
+        <img src="https://via.placeholder.com/200x150?text=Marathon" alt="Marathon" />
+        <p>5. September: Lauf durch die Stadt. Anmeldungen noch möglich.</p>
+      </article>
+      <article class="info-card">
+        <h3>Konzert im Rathaus</h3>
+        <img src="https://via.placeholder.com/200x150?text=Konzert" alt="Konzert" />
+        <p>20. September: Klassische Musik in historischem Ambiente.</p>
+      </article>
+      <article class="info-card">
+        <h3>Weihnachtsmarkt</h3>
+        <img src="https://via.placeholder.com/200x150?text=Weihnachtsmarkt" alt="Weihnachtsmarkt" />
+        <p>Dezember: Glühwein, Handwerk und festliche Stimmung.</p>
+      </article>
+    </div>
+
+    <h2>Bildergalerie</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Festival+Buehne" alt="Festival Bühne" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Lauf+Event" alt="Lauf Event" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Konzert+Saal" alt="Konzert Saal" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Markt+Stand" alt="Markt Stand" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Feuerwerk" alt="Feuerwerk" />
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/300x200?text=Tanz" alt="Tanz" />
+      </div>
+    </div>
+
+    <h2>Gastronomie bei Events</h2>
+    <p>Viele Veranstaltungen bieten lokale Spezialitäten. Probieren Sie Street Food und Craft Beer bei unseren Festivals.</p>
+
+    <h2>Tipps</h2>
+    <ul>
+      <li>Früh buchen für beliebte Events.</li>
+      <li>Nutzen Sie öffentliche Verkehrsmittel für bessere Erreichbarkeit.</li>
+      <li>Anekdote: Das Sommerfest geht auf ein altes Erntefest zurück, das vor Jahrhunderten begann.</li>
+    </ul>
+
     <div class="info-card">
       <h3>Spezialinfo:</h3>
       <p>Wenn du mit Freunden kommen möchtest: Früh buchen lohnt sich.</p>
     </div>
+
     <a href="index.html" class="btn">Zurück zur Startseite</a>
   </main>
 
@@ -50,5 +110,11 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Vollbild" />
+  </div>
 </body>
 </html>
